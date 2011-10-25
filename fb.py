@@ -79,10 +79,10 @@ class FB(object):
         return self.fb_graph.put_wall_post(message=message,attachment=post_params,profile_id=profile_id)
 
     def getGroups(self):
-        data = fb.fb_graph.get_connections("me","groups")
+        data = self.fb_graph.get_connections("me","groups")
         return data["data"]
 
     def getGroupFeed(self,group_id):
-        return fb.fb_graph.get_object("%s/feed" % group_id)["data"]
+        return self.fb_graph.get_object("%s/feed" % group_id)["data"]
 
 
