@@ -1,1 +1,4 @@
-Social helpers
+Classes with base functions(OAUTH authorization and other) for fast start with social net api's.
+Current classes:
+    FaceBook
+    Twitter
